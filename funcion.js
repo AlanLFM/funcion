@@ -114,9 +114,11 @@
             //Retención
 
 
-            var retencion;
             if(sueldo<2000 && sueldo>1000){
                 console.log("Tu sueldo se va a multiplicar por 0.08")
+                var dos=sueldo*(0.08)
+                document.getElementById("retencion").value=dos;
+                retenciondiv.innerHTML=("Tu sueldo se va a multiplicar por 0.08")
                 if(puesto=="JEFE_AREA"){
                     console.log("Sueldo +%3.5")
                     retencion=sueldo*(0.08+3.5)
@@ -138,6 +140,9 @@
                          }
             else if(sueldo>2000 && sueldo<3000){
                 console.log("Tu sueldo se multiplica por 0.095")
+                var dos=sueldo*(0.095)
+                document.getElementById("retencion").value=dos;
+                retenciondiv.innerHTML=("Tu sueldo se va a multiplicar por 0.095")
                 if(puesto=="JEFE_AREA"){
                     console.log("Sueldo +%3.5")
                     retencion=sueldo*(0.095+3.5)
@@ -161,6 +166,10 @@
 
             }else if(sueldo<4000 && sueldo>3000){
                 console.log("Tu sueldo se multiplicará por 0.11")
+                var dos=sueldo*(0.11)
+                document.getElementById("retencion").value=dos;
+                
+                retenciondiv.innerHTML=("Tu sueldo se va a multiplicar por 0.11")
                 if(puesto=="JEFE_AREA"){
                     console.log("Sueldo +%3.5")
                     
@@ -173,6 +182,7 @@
                     console.log("Sueldo +%3")
                     
                     retenciondiv.innerHTML=("Tu sueldo se multiplicará por 0.11 y suma %3")
+                    
                     retencion=sueldo*(0.11+3)
                     console.log("retencion" + retencion)
                     document.getElementById("retencion").value=retencion;
@@ -183,6 +193,9 @@
                 }
             }else if(sueldo>4000 && sueldo<5000){
                 console.log("Tu sueldo se multiplicara por 0.125")
+                var dos=sueldo*(0.125)
+                document.getElementById("retencion").value=dos;
+                retenciondiv.innerHTML=("Tu sueldo se va a multiplicar por 0.125")
                 if(puesto=="JEFE_AREA"){
                     console.log("Sueldo +%3.5")
                     
@@ -205,6 +218,10 @@
                 }
             }else if(sueldo>5000 && sueldo<6000){
                 console.log("Tu sueldo se multiplicará por 0.14")
+                var dos=sueldo*(0.14)
+                document.getElementById("retencion").value=dos;
+                
+                retenciondiv.innerHTML=("Tu sueldo se va a multiplicar por 0.14")
 
                 if(puesto=="JEFE_AREA"){
                     
